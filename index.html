@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Try the button to enter the values</p>
+<button onclick="myFunction()">Try here</button>
+<p id="demo1"></p>
+<p id="demo"></p>
+<p id="d1"></p>
+<p id="d"></p>
+<script>
+function myFunction() {
+  let n1 = Number(prompt("No. of names:","0"));
+  var array = [];
+
+for(var i=0; i<n1; i++) {
+  array[i] = prompt('Enter Name' + (i+1)+":");
+}
+array.sort();
+document.getElementById("demo1").innerHTML ="Sorting in Ascending order :";
+document.getElementById("demo").innerHTML =array;
+array.reverse();
+document.getElementById("d1").innerHTML ="Sorting in Descending order :";
+document.getElementById("d").innerHTML =array;
+}
+</script>
+</body>
+</html>
+
